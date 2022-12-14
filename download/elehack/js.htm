@@ -1,6 +1,3 @@
 <html>
-  <p>Copy to console</p>
- <a href="javascript:if(%22maxhax%22%3D%3Dprompt(%22Pass%3A%20%22))%7Bvar%20existing%3DlocalStorage.getItem(%22MJS-Electron-Dash-v1.0.0%22)%3Bexisting%3Dexisting%3FJSON.parse(existing)%3A%7B%7D%3Bexisting.score%3Dprompt(%22score%3A%20%22)%3BlocalStorage.setItem(%22MJS-Electron-Dash-v1.0.0%22%2CJSON.stringify(existing))%3BsetTimeout(location.reload.bind(location)%2C1E3)%7Delse%20alert(%22incorrect%20passcode!%22)%3Bvoid+0" target="_blank" class="btn btn-primary btn-block"><i class="fa fa-external-link"></i>
-          finn
-        </a>
+<a href="javascript:(function()%7Bif%20(prompt(%22Pass%3A%20%22)%20%3D%3D%20%22maxhax%22)%20%7B%0A%20%20%20%20var%20existing%20%3D%20localStorage.getItem('MJS-Electron-Dash-v1.0.0')%3B%0A%0A%20%20%20%20%2F%2F%20If%20no%20existing%20data%2C%20create%20an%20array%0A%20%20%20%20%2F%2F%20Otherwise%2C%20convert%20the%20localStorage%20string%20to%20an%20array%0A%20%20%20%20existing%20%3D%20existing%20%3F%20JSON.parse(existing)%20%3A%20%7B%7D%3B%0A%0A%20%20%20%20%2F%2F%20Add%20new%20data%20to%20localStorage%20Array%0A%20%20%20%20existing%5B'score'%5D%20%3D%20prompt(%22score%3A%20%22)%3B%0A%0A%20%20%20%20%2F%2F%20Save%20back%20to%20localStorage%0A%20%20%20%20localStorage.setItem('MJS-Electron-Dash-v1.0.0'%2C%20JSON.stringify(existing))%3B%0A%20%20%20%20setTimeout(location.reload.bind(location)%2C%201000)%3B%7D%0A%20%20%20%20else%20%7B%0A%20%20%20%20%20%20%20%20alert(%22incorrect%20passcode!%22)%0A%20%20%20%20%7D%7D)()%3B">Finn</a>
 </html>
