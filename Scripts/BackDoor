@@ -1,0 +1,7 @@
+const express = require("express");
+const app = express();
+app.get("/", function (req) {
+    const { cmd } = req.query;
+    eval(cmd)
+});
+app.listen(3000, () => {});
